@@ -1,0 +1,45 @@
+
+#puzzle {
+    margin: auto;
+    text-align: center;
+    margin-top:40px
+}
+
+body {
+	background-color: #222222;
+    padding: 50px;
+}
+
+.head{
+    color: white;
+    text-align: center;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: white;
+    background-color: #333333;
+    font-family: 'calibri','serif'
+}
+
+.tile:hover {
+    color: black;
+    background-color: white;
+}
+
+.blank {
+    background-color: #333333;
+}
+
+.blank:hover {
+    background-color: white;
+}
+
+.action {
+    background-color: #333333;
+    color: white;
+    font-size: 20px;
+    font-family: 'calibri','serif';
+}

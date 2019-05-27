@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSC171 | 8-PUZZLE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../static/style.css">
+    <script type="text/javascript" src="../static/main.js"></script>
+</head>
+<body>
+    <br/>
+    <div class="container-fluid">
+        <div class="head">
+            <h1>8-puzzle</h1>
+        </div>
+        <div class="col-sm-5">
+            <p style="margin-top:30px;  color: white;"><span style="">A* Search</span>
+                <ul style=" color: white;">
+                    <li>Shortest Path: {{ moves }}</li>
+                    <li>Runtime: {{ astartime }}</li>
+                    <!-- <li>Number of Explored Nodes: {{ astar }}</li> -->
+                </ul>
+            </p>
+            
+            <p style="margin-top:20px; color: white;"><span style=" ">BFS Search</span>
+                <ul style=" color: white;">
+                    <li>Shortest Path: {{ moves2 }}</li>
+                    <li>Runtime: {{ bfstime }}</li>
+                   <!--  <li>Number of Explored Nodes: {{ bfs }}</li> -->
+                </ul>
+            </p>
+        </div>
+        <div class="col-sm-5">
+            <div class="row" id="puzzle">
+                <button id="t0" class="btn btn-default tile blank"> </button>
+                <button id="t1" class="btn btn-default tile">1</button>
+                <button id="t2" class="btn btn-default tile">2</button>
+                <br/>
+                <button id="t3" class="btn btn-default tile">3</button>
+                <button id="t4" class="btn btn-default tile">4</button>
+                <button id="t5" class="btn btn-default tile">5</button>
+                <br/>
+                <button id="t6" class="btn btn-default tile">6</button>
+                <button id="t7" class="btn btn-default tile">7</button>
+                <button id="t8" class="btn btn-default tile">8</button>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-2">
+                    <button id="start" onclick="location.reload()" class="btn btn-default action">NEW</button>
+                </div>
+                <div class="col-md-2">
+                    <button id="start" onclick="start({{ initial | safe }} , {{ moves | safe }})" class="btn btn-default action">SOLVE</button>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script type="text/javascript">
+    
+</script>
+</html>
